@@ -70,6 +70,184 @@
             bindings = <&kp I &kp M &kp P &kp O &kp R &kp T &kp LS(F) &kp A &kp L &kp S &kp E>;
             label = "MODJ";
         };
+
+        /* Lazy drift — slow, mostly down, rare corrections. ~5 min */
+        Scrl_Lazy: Scrl_Lazy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&msc SCRL_DOWN>, <&macro_wait_time 1876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2134>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2876>,
+                <&msc SCRL_UP>,   <&macro_wait_time 1432>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2341>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1987>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1543>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3102>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2213>,
+                <&msc SCRL_UP>,   <&macro_wait_time 1765>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2098>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1432>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2987>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2543>,
+                <&msc SCRL_UP>,   <&macro_wait_time 1234>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3211>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2109>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1987>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2765>,
+                <&msc SCRL_UP>,   <&macro_wait_time 1543>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2432>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3087>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2213>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1765>,
+                <&msc SCRL_UP>,   <&macro_wait_time 2098>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1432>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1987>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2341>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3210>,
+                <&msc SCRL_UP>,   <&macro_wait_time 1654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1543>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2109>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1876>;
+        };
+
+        /* Rush — fast impatient bursts, long pauses between. ~3 min */
+        Scrl_Rush: Scrl_Rush {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&msc SCRL_DOWN>, <&macro_wait_time 387>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 412>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 356>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 443>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2876>,
+                <&msc SCRL_UP>,   <&macro_wait_time 534>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 398>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 421>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 367>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3241>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 445>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 378>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 412>,
+                <&msc SCRL_UP>,   <&macro_wait_time 489>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 356>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 423>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 398>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3109>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 445>,
+                <&msc SCRL_UP>,   <&macro_wait_time 512>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 378>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 421>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2987>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 356>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 412>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 443>,
+                <&msc SCRL_UP>,   <&macro_wait_time 398>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3432>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 367>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 423>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 389>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 2765>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 412>,
+                <&msc SCRL_UP>,   <&macro_wait_time 445>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 356>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 398>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3098>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 421>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 378>;
+        };
+
+        /* Reader — steady reading cadence, frequent small corrections. ~4 min */
+        Scrl_Read: Scrl_Read {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&msc SCRL_DOWN>, <&macro_wait_time 987>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1123>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 876>,
+                <&msc SCRL_UP>,   <&macro_wait_time 654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1098>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 934>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1187>,
+                <&msc SCRL_UP>,   <&macro_wait_time 712>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1043>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1234>,
+                <&msc SCRL_UP>,   <&macro_wait_time 598>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 965>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1109>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 843>,
+                <&msc SCRL_UP>,   <&macro_wait_time 734>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1076>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 912>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1198>,
+                <&msc SCRL_UP>,   <&macro_wait_time 621>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1034>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 887>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1143>,
+                <&msc SCRL_UP>,   <&macro_wait_time 698>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 976>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1087>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 854>,
+                <&msc SCRL_UP>,   <&macro_wait_time 743>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1012>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 934>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1176>,
+                <&msc SCRL_UP>,   <&macro_wait_time 612>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1054>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 898>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1221>,
+                <&msc SCRL_UP>,   <&macro_wait_time 687>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 965>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 1132>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 876>,
+                <&msc SCRL_UP>,   <&macro_wait_time 721>;
+        };
+
+        /* Drift — distracted, very long pauses, erratic direction. ~8 min */
+        Scrl_Drift: Scrl_Drift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&msc SCRL_DOWN>, <&macro_wait_time 4321>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3876>,
+                <&msc SCRL_UP>,   <&macro_wait_time 5102>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3219>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4987>,
+                <&msc SCRL_UP>,   <&macro_wait_time 3543>,
+                <&msc SCRL_UP>,   <&macro_wait_time 4876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3210>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 5234>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4109>,
+                <&msc SCRL_UP>,   <&macro_wait_time 3765>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4432>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3987>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 5321>,
+                <&msc SCRL_UP>,   <&macro_wait_time 4123>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3654>,
+                <&msc SCRL_UP>,   <&macro_wait_time 4876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3431>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 5109>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4321>,
+                <&msc SCRL_UP>,   <&macro_wait_time 3876>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4654>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3219>,
+                <&msc SCRL_UP>,   <&macro_wait_time 5002>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4123>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 3765>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 4987>,
+                <&msc SCRL_UP>,   <&macro_wait_time 3432>,
+                <&msc SCRL_DOWN>, <&macro_wait_time 5210>;
+        };
     };
 
     keymap {
