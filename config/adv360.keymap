@@ -212,7 +212,6 @@
                 <&macro_tap_time 48>, <&kp DOWN>, <&macro_wait_time 3431>,
                 <&macro_tap_time 27>, <&kp DOWN>, <&macro_wait_time 5109>;
         };
-        };
     };
 
     keymap {
