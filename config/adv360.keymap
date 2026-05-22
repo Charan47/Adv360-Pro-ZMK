@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/stp.h>
+﻿#include <dt-bindings/zmk/stp.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
@@ -71,146 +71,146 @@
             label = "MODJ";
         };
 
-        /* Lazy drift — slow, mostly down, rare corrections. ~5 min */
+        /* Lazy drift â€” slow, mostly down, rare corrections. ~5 min */
 
         Scrl_Lazy: Scrl_Lazy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp DOWN>, <&macro_wait_time 38>, <&macro_release &kp DOWN>, <&macro_wait_time 1876>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 51>, <&macro_release &kp DOWN>, <&macro_wait_time 2134>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 29>, <&macro_release &kp DOWN>, <&macro_wait_time 1654>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 44>, <&macro_release &kp DOWN>, <&macro_wait_time 2876>,
-                <&macro_press &kp UP>,   <&macro_wait_time 33>, <&macro_release &kp UP>,   <&macro_wait_time 1432>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 57>, <&macro_release &kp DOWN>, <&macro_wait_time 2341>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 31>, <&macro_release &kp DOWN>, <&macro_wait_time 1987>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 46>, <&macro_release &kp DOWN>, <&macro_wait_time 2654>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 62>, <&macro_release &kp DOWN>, <&macro_wait_time 1543>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 28>, <&macro_release &kp DOWN>, <&macro_wait_time 3102>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 53>, <&macro_release &kp DOWN>, <&macro_wait_time 2213>,
-                <&macro_press &kp UP>,   <&macro_wait_time 41>, <&macro_release &kp UP>,   <&macro_wait_time 1765>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 36>, <&macro_release &kp DOWN>, <&macro_wait_time 2098>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 49>, <&macro_release &kp DOWN>, <&macro_wait_time 1432>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 27>, <&macro_release &kp DOWN>, <&macro_wait_time 2987>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 58>, <&macro_release &kp DOWN>, <&macro_wait_time 1876>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 43>, <&macro_release &kp DOWN>, <&macro_wait_time 2543>,
-                <&macro_press &kp UP>,   <&macro_wait_time 35>, <&macro_release &kp UP>,   <&macro_wait_time 1234>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 61>, <&macro_release &kp DOWN>, <&macro_wait_time 3211>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 30>, <&macro_release &kp DOWN>, <&macro_wait_time 1654>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 48>, <&macro_release &kp DOWN>, <&macro_wait_time 2109>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 55>, <&macro_release &kp DOWN>, <&macro_wait_time 1987>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 32>, <&macro_release &kp DOWN>, <&macro_wait_time 2765>,
-                <&macro_press &kp UP>,   <&macro_wait_time 47>, <&macro_release &kp UP>,   <&macro_wait_time 1543>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 39>, <&macro_release &kp DOWN>, <&macro_wait_time 2432>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 63>, <&macro_release &kp DOWN>, <&macro_wait_time 1876>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 26>, <&macro_release &kp DOWN>, <&macro_wait_time 3087>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 52>, <&macro_release &kp DOWN>, <&macro_wait_time 2213>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 37>, <&macro_release &kp DOWN>, <&macro_wait_time 1765>,
-                <&macro_press &kp UP>,   <&macro_wait_time 44>, <&macro_release &kp UP>,   <&macro_wait_time 2098>;
+                <&macro_tap_time 38>, <&kp DOWN>, <&macro_wait_time 1876>,
+                <&macro_tap_time 51>, <&kp DOWN>, <&macro_wait_time 2134>,
+                <&macro_tap_time 29>, <&kp DOWN>, <&macro_wait_time 1654>,
+                <&macro_tap_time 44>, <&kp DOWN>, <&macro_wait_time 2876>,
+                <&macro_tap_time 33>, <&kp UP>, <&macro_wait_time 1432>,
+                <&macro_tap_time 57>, <&kp DOWN>, <&macro_wait_time 2341>,
+                <&macro_tap_time 31>, <&kp DOWN>, <&macro_wait_time 1987>,
+                <&macro_tap_time 46>, <&kp DOWN>, <&macro_wait_time 2654>,
+                <&macro_tap_time 62>, <&kp DOWN>, <&macro_wait_time 1543>,
+                <&macro_tap_time 28>, <&kp DOWN>, <&macro_wait_time 3102>,
+                <&macro_tap_time 53>, <&kp DOWN>, <&macro_wait_time 2213>,
+                <&macro_tap_time 41>, <&kp UP>, <&macro_wait_time 1765>,
+                <&macro_tap_time 36>, <&kp DOWN>, <&macro_wait_time 2098>,
+                <&macro_tap_time 49>, <&kp DOWN>, <&macro_wait_time 1432>,
+                <&macro_tap_time 27>, <&kp DOWN>, <&macro_wait_time 2987>,
+                <&macro_tap_time 58>, <&kp DOWN>, <&macro_wait_time 1876>,
+                <&macro_tap_time 43>, <&kp DOWN>, <&macro_wait_time 2543>,
+                <&macro_tap_time 35>, <&kp UP>, <&macro_wait_time 1234>,
+                <&macro_tap_time 61>, <&kp DOWN>, <&macro_wait_time 3211>,
+                <&macro_tap_time 30>, <&kp DOWN>, <&macro_wait_time 1654>,
+                <&macro_tap_time 48>, <&kp DOWN>, <&macro_wait_time 2109>,
+                <&macro_tap_time 55>, <&kp DOWN>, <&macro_wait_time 1987>,
+                <&macro_tap_time 32>, <&kp DOWN>, <&macro_wait_time 2765>,
+                <&macro_tap_time 47>, <&kp UP>, <&macro_wait_time 1543>,
+                <&macro_tap_time 39>, <&kp DOWN>, <&macro_wait_time 2432>,
+                <&macro_tap_time 63>, <&kp DOWN>, <&macro_wait_time 1876>,
+                <&macro_tap_time 26>, <&kp DOWN>, <&macro_wait_time 3087>,
+                <&macro_tap_time 52>, <&kp DOWN>, <&macro_wait_time 2213>,
+                <&macro_tap_time 37>, <&kp DOWN>, <&macro_wait_time 1765>,
+                <&macro_tap_time 44>, <&kp UP>, <&macro_wait_time 2098>;
         };
 
-        /* Rush — fast impatient bursts, long pauses between. ~3 min */
+        /* Rush â€” fast impatient bursts, long pauses between. ~3 min */
 
         Scrl_Rush: Scrl_Rush {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp DOWN>, <&macro_wait_time 43>, <&macro_release &kp DOWN>, <&macro_wait_time 387>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 31>, <&macro_release &kp DOWN>, <&macro_wait_time 412>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 56>, <&macro_release &kp DOWN>, <&macro_wait_time 356>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 28>, <&macro_release &kp DOWN>, <&macro_wait_time 443>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 47>, <&macro_release &kp DOWN>, <&macro_wait_time 2876>,
-                <&macro_press &kp UP>,   <&macro_wait_time 39>, <&macro_release &kp UP>,   <&macro_wait_time 534>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 62>, <&macro_release &kp DOWN>, <&macro_wait_time 398>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 34>, <&macro_release &kp DOWN>, <&macro_wait_time 421>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 51>, <&macro_release &kp DOWN>, <&macro_wait_time 367>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 29>, <&macro_release &kp DOWN>, <&macro_wait_time 3241>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 58>, <&macro_release &kp DOWN>, <&macro_wait_time 445>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 41>, <&macro_release &kp DOWN>, <&macro_wait_time 378>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 27>, <&macro_release &kp DOWN>, <&macro_wait_time 412>,
-                <&macro_press &kp UP>,   <&macro_wait_time 53>, <&macro_release &kp UP>,   <&macro_wait_time 489>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 36>, <&macro_release &kp DOWN>, <&macro_wait_time 2654>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 49>, <&macro_release &kp DOWN>, <&macro_wait_time 356>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 32>, <&macro_release &kp DOWN>, <&macro_wait_time 423>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 61>, <&macro_release &kp DOWN>, <&macro_wait_time 398>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 38>, <&macro_release &kp DOWN>, <&macro_wait_time 3109>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 44>, <&macro_release &kp DOWN>, <&macro_wait_time 445>,
-                <&macro_press &kp UP>,   <&macro_wait_time 57>, <&macro_release &kp UP>,   <&macro_wait_time 512>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 30>, <&macro_release &kp DOWN>, <&macro_wait_time 378>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 46>, <&macro_release &kp DOWN>, <&macro_wait_time 421>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 63>, <&macro_release &kp DOWN>, <&macro_wait_time 2987>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 35>, <&macro_release &kp DOWN>, <&macro_wait_time 356>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 52>, <&macro_release &kp DOWN>, <&macro_wait_time 412>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 28>, <&macro_release &kp DOWN>, <&macro_wait_time 443>,
-                <&macro_press &kp UP>,   <&macro_wait_time 45>, <&macro_release &kp UP>,   <&macro_wait_time 398>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 59>, <&macro_release &kp DOWN>, <&macro_wait_time 3432>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 33>, <&macro_release &kp DOWN>, <&macro_wait_time 367>;
+                <&macro_tap_time 43>, <&kp DOWN>, <&macro_wait_time 387>,
+                <&macro_tap_time 31>, <&kp DOWN>, <&macro_wait_time 412>,
+                <&macro_tap_time 56>, <&kp DOWN>, <&macro_wait_time 356>,
+                <&macro_tap_time 28>, <&kp DOWN>, <&macro_wait_time 443>,
+                <&macro_tap_time 47>, <&kp DOWN>, <&macro_wait_time 2876>,
+                <&macro_tap_time 39>, <&kp UP>, <&macro_wait_time 534>,
+                <&macro_tap_time 62>, <&kp DOWN>, <&macro_wait_time 398>,
+                <&macro_tap_time 34>, <&kp DOWN>, <&macro_wait_time 421>,
+                <&macro_tap_time 51>, <&kp DOWN>, <&macro_wait_time 367>,
+                <&macro_tap_time 29>, <&kp DOWN>, <&macro_wait_time 3241>,
+                <&macro_tap_time 58>, <&kp DOWN>, <&macro_wait_time 445>,
+                <&macro_tap_time 41>, <&kp DOWN>, <&macro_wait_time 378>,
+                <&macro_tap_time 27>, <&kp DOWN>, <&macro_wait_time 412>,
+                <&macro_tap_time 53>, <&kp UP>, <&macro_wait_time 489>,
+                <&macro_tap_time 36>, <&kp DOWN>, <&macro_wait_time 2654>,
+                <&macro_tap_time 49>, <&kp DOWN>, <&macro_wait_time 356>,
+                <&macro_tap_time 32>, <&kp DOWN>, <&macro_wait_time 423>,
+                <&macro_tap_time 61>, <&kp DOWN>, <&macro_wait_time 398>,
+                <&macro_tap_time 38>, <&kp DOWN>, <&macro_wait_time 3109>,
+                <&macro_tap_time 44>, <&kp DOWN>, <&macro_wait_time 445>,
+                <&macro_tap_time 57>, <&kp UP>, <&macro_wait_time 512>,
+                <&macro_tap_time 30>, <&kp DOWN>, <&macro_wait_time 378>,
+                <&macro_tap_time 46>, <&kp DOWN>, <&macro_wait_time 421>,
+                <&macro_tap_time 63>, <&kp DOWN>, <&macro_wait_time 2987>,
+                <&macro_tap_time 35>, <&kp DOWN>, <&macro_wait_time 356>,
+                <&macro_tap_time 52>, <&kp DOWN>, <&macro_wait_time 412>,
+                <&macro_tap_time 28>, <&kp DOWN>, <&macro_wait_time 443>,
+                <&macro_tap_time 45>, <&kp UP>, <&macro_wait_time 398>,
+                <&macro_tap_time 59>, <&kp DOWN>, <&macro_wait_time 3432>,
+                <&macro_tap_time 33>, <&kp DOWN>, <&macro_wait_time 367>;
         };
 
-        /* Reader — steady reading cadence, frequent small corrections. ~4 min */
+        /* Reader â€” steady reading cadence, frequent small corrections. ~4 min */
 
         Scrl_Read: Scrl_Read {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp DOWN>, <&macro_wait_time 45>, <&macro_release &kp DOWN>, <&macro_wait_time 987>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 32>, <&macro_release &kp DOWN>, <&macro_wait_time 1123>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 58>, <&macro_release &kp DOWN>, <&macro_wait_time 876>,
-                <&macro_press &kp UP>,   <&macro_wait_time 41>, <&macro_release &kp UP>,   <&macro_wait_time 654>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 27>, <&macro_release &kp DOWN>, <&macro_wait_time 1098>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 53>, <&macro_release &kp DOWN>, <&macro_wait_time 934>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 36>, <&macro_release &kp DOWN>, <&macro_wait_time 1187>,
-                <&macro_press &kp UP>,   <&macro_wait_time 61>, <&macro_release &kp UP>,   <&macro_wait_time 712>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 29>, <&macro_release &kp DOWN>, <&macro_wait_time 1043>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 48>, <&macro_release &kp DOWN>, <&macro_wait_time 876>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 39>, <&macro_release &kp DOWN>, <&macro_wait_time 1234>,
-                <&macro_press &kp UP>,   <&macro_wait_time 55>, <&macro_release &kp UP>,   <&macro_wait_time 598>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 31>, <&macro_release &kp DOWN>, <&macro_wait_time 965>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 44>, <&macro_release &kp DOWN>, <&macro_wait_time 1109>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 62>, <&macro_release &kp DOWN>, <&macro_wait_time 843>,
-                <&macro_press &kp UP>,   <&macro_wait_time 28>, <&macro_release &kp UP>,   <&macro_wait_time 734>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 51>, <&macro_release &kp DOWN>, <&macro_wait_time 1076>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 37>, <&macro_release &kp DOWN>, <&macro_wait_time 912>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 46>, <&macro_release &kp DOWN>, <&macro_wait_time 1198>,
-                <&macro_press &kp UP>,   <&macro_wait_time 33>, <&macro_release &kp UP>,   <&macro_wait_time 621>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 57>, <&macro_release &kp DOWN>, <&macro_wait_time 1034>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 26>, <&macro_release &kp DOWN>, <&macro_wait_time 887>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 43>, <&macro_release &kp DOWN>, <&macro_wait_time 1143>,
-                <&macro_press &kp UP>,   <&macro_wait_time 59>, <&macro_release &kp UP>,   <&macro_wait_time 698>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 34>, <&macro_release &kp DOWN>, <&macro_wait_time 976>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 50>, <&macro_release &kp DOWN>, <&macro_wait_time 1087>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 38>, <&macro_release &kp DOWN>, <&macro_wait_time 854>,
-                <&macro_press &kp UP>,   <&macro_wait_time 47>, <&macro_release &kp UP>,   <&macro_wait_time 743>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 30>, <&macro_release &kp DOWN>, <&macro_wait_time 1012>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 56>, <&macro_release &kp DOWN>, <&macro_wait_time 934>;
+                <&macro_tap_time 45>, <&kp DOWN>, <&macro_wait_time 987>,
+                <&macro_tap_time 32>, <&kp DOWN>, <&macro_wait_time 1123>,
+                <&macro_tap_time 58>, <&kp DOWN>, <&macro_wait_time 876>,
+                <&macro_tap_time 41>, <&kp UP>, <&macro_wait_time 654>,
+                <&macro_tap_time 27>, <&kp DOWN>, <&macro_wait_time 1098>,
+                <&macro_tap_time 53>, <&kp DOWN>, <&macro_wait_time 934>,
+                <&macro_tap_time 36>, <&kp DOWN>, <&macro_wait_time 1187>,
+                <&macro_tap_time 61>, <&kp UP>, <&macro_wait_time 712>,
+                <&macro_tap_time 29>, <&kp DOWN>, <&macro_wait_time 1043>,
+                <&macro_tap_time 48>, <&kp DOWN>, <&macro_wait_time 876>,
+                <&macro_tap_time 39>, <&kp DOWN>, <&macro_wait_time 1234>,
+                <&macro_tap_time 55>, <&kp UP>, <&macro_wait_time 598>,
+                <&macro_tap_time 31>, <&kp DOWN>, <&macro_wait_time 965>,
+                <&macro_tap_time 44>, <&kp DOWN>, <&macro_wait_time 1109>,
+                <&macro_tap_time 62>, <&kp DOWN>, <&macro_wait_time 843>,
+                <&macro_tap_time 28>, <&kp UP>, <&macro_wait_time 734>,
+                <&macro_tap_time 51>, <&kp DOWN>, <&macro_wait_time 1076>,
+                <&macro_tap_time 37>, <&kp DOWN>, <&macro_wait_time 912>,
+                <&macro_tap_time 46>, <&kp DOWN>, <&macro_wait_time 1198>,
+                <&macro_tap_time 33>, <&kp UP>, <&macro_wait_time 621>,
+                <&macro_tap_time 57>, <&kp DOWN>, <&macro_wait_time 1034>,
+                <&macro_tap_time 26>, <&kp DOWN>, <&macro_wait_time 887>,
+                <&macro_tap_time 43>, <&kp DOWN>, <&macro_wait_time 1143>,
+                <&macro_tap_time 59>, <&kp UP>, <&macro_wait_time 698>,
+                <&macro_tap_time 34>, <&kp DOWN>, <&macro_wait_time 976>,
+                <&macro_tap_time 50>, <&kp DOWN>, <&macro_wait_time 1087>,
+                <&macro_tap_time 38>, <&kp DOWN>, <&macro_wait_time 854>,
+                <&macro_tap_time 47>, <&kp UP>, <&macro_wait_time 743>,
+                <&macro_tap_time 30>, <&kp DOWN>, <&macro_wait_time 1012>,
+                <&macro_tap_time 56>, <&kp DOWN>, <&macro_wait_time 934>;
         };
 
-        /* Drift — distracted, very long pauses, erratic direction. ~8 min */
+        /* Drift â€” distracted, very long pauses, erratic direction. ~8 min */
 
         Scrl_Drift: Scrl_Drift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp DOWN>, <&macro_wait_time 42>, <&macro_release &kp DOWN>, <&macro_wait_time 4321>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 31>, <&macro_release &kp DOWN>, <&macro_wait_time 3876>,
-                <&macro_press &kp UP>,   <&macro_wait_time 57>, <&macro_release &kp UP>,   <&macro_wait_time 5102>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 28>, <&macro_release &kp DOWN>, <&macro_wait_time 4654>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 46>, <&macro_release &kp DOWN>, <&macro_wait_time 3219>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 61>, <&macro_release &kp DOWN>, <&macro_wait_time 4987>,
-                <&macro_press &kp UP>,   <&macro_wait_time 35>, <&macro_release &kp UP>,   <&macro_wait_time 3543>,
-                <&macro_press &kp UP>,   <&macro_wait_time 52>, <&macro_release &kp UP>,   <&macro_wait_time 4876>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 29>, <&macro_release &kp DOWN>, <&macro_wait_time 3210>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 44>, <&macro_release &kp DOWN>, <&macro_wait_time 5234>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 58>, <&macro_release &kp DOWN>, <&macro_wait_time 4109>,
-                <&macro_press &kp UP>,   <&macro_wait_time 33>, <&macro_release &kp UP>,   <&macro_wait_time 3765>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 47>, <&macro_release &kp DOWN>, <&macro_wait_time 4432>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 26>, <&macro_release &kp DOWN>, <&macro_wait_time 3987>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 53>, <&macro_release &kp DOWN>, <&macro_wait_time 5321>,
-                <&macro_press &kp UP>,   <&macro_wait_time 39>, <&macro_release &kp UP>,   <&macro_wait_time 4123>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 62>, <&macro_release &kp DOWN>, <&macro_wait_time 3654>,
-                <&macro_press &kp UP>,   <&macro_wait_time 34>, <&macro_release &kp UP>,   <&macro_wait_time 4876>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 48>, <&macro_release &kp DOWN>, <&macro_wait_time 3431>,
-                <&macro_press &kp DOWN>, <&macro_wait_time 27>, <&macro_release &kp DOWN>, <&macro_wait_time 5109>;
+                <&macro_tap_time 42>, <&kp DOWN>, <&macro_wait_time 4321>,
+                <&macro_tap_time 31>, <&kp DOWN>, <&macro_wait_time 3876>,
+                <&macro_tap_time 57>, <&kp UP>, <&macro_wait_time 5102>,
+                <&macro_tap_time 28>, <&kp DOWN>, <&macro_wait_time 4654>,
+                <&macro_tap_time 46>, <&kp DOWN>, <&macro_wait_time 3219>,
+                <&macro_tap_time 61>, <&kp DOWN>, <&macro_wait_time 4987>,
+                <&macro_tap_time 35>, <&kp UP>, <&macro_wait_time 3543>,
+                <&macro_tap_time 52>, <&kp UP>, <&macro_wait_time 4876>,
+                <&macro_tap_time 29>, <&kp DOWN>, <&macro_wait_time 3210>,
+                <&macro_tap_time 44>, <&kp DOWN>, <&macro_wait_time 5234>,
+                <&macro_tap_time 58>, <&kp DOWN>, <&macro_wait_time 4109>,
+                <&macro_tap_time 33>, <&kp UP>, <&macro_wait_time 3765>,
+                <&macro_tap_time 47>, <&kp DOWN>, <&macro_wait_time 4432>,
+                <&macro_tap_time 26>, <&kp DOWN>, <&macro_wait_time 3987>,
+                <&macro_tap_time 53>, <&kp DOWN>, <&macro_wait_time 5321>,
+                <&macro_tap_time 39>, <&kp UP>, <&macro_wait_time 4123>,
+                <&macro_tap_time 62>, <&kp DOWN>, <&macro_wait_time 3654>,
+                <&macro_tap_time 34>, <&kp UP>, <&macro_wait_time 4876>,
+                <&macro_tap_time 48>, <&kp DOWN>, <&macro_wait_time 3431>,
+                <&macro_tap_time 27>, <&kp DOWN>, <&macro_wait_time 5109>;
         };
         };
     };
