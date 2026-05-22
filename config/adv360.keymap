@@ -25,7 +25,7 @@
         ModI: ModI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp I &kp SPACE &kp EQUAL &kp SPACE &kp N0>;
+            bindings = <&kp X &kp SPACE &kp EQUAL &kp SPACE &kp N0>;
             label = "MODI";
         };
     };
