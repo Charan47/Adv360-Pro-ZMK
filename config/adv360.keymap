@@ -71,7 +71,7 @@
             label = "MODJ";
         };
 
-        /* Lazy drift â€” slow, mostly down, rare corrections. ~5 min */
+        /* Lazy drift - slow, mostly down, rare corrections. 30 keys, ~1.1 min */
 
         Scrl_Lazy: Scrl_Lazy {
             compatible = "zmk,behavior-macro";
@@ -109,7 +109,7 @@
                 <&macro_tap_time 44>, <&kp UP>, <&macro_wait_time 2098>;
         };
 
-        /* Rush â€” fast impatient bursts, long pauses between. ~3 min */
+        /* Rush - fast impatient bursts, long pauses. 30 keys, ~0.5 min */
 
         Scrl_Rush: Scrl_Rush {
             compatible = "zmk,behavior-macro";
@@ -147,7 +147,7 @@
                 <&macro_tap_time 33>, <&kp DOWN>, <&macro_wait_time 367>;
         };
 
-        /* Reader â€” steady reading cadence, frequent small corrections. ~4 min */
+        /* Reader - steady reading cadence, frequent corrections. 30 keys, ~0.5 min */
 
         Scrl_Read: Scrl_Read {
             compatible = "zmk,behavior-macro";
@@ -185,7 +185,7 @@
                 <&macro_tap_time 56>, <&kp DOWN>, <&macro_wait_time 934>;
         };
 
-        /* Drift â€” distracted, very long pauses, erratic direction. ~8 min */
+        /* Drift - distracted, very long pauses, erratic. 20 keys, ~1.4 min */
 
         Scrl_Drift: Scrl_Drift {
             compatible = "zmk,behavior-macro";
@@ -211,6 +211,22 @@
                 <&macro_tap_time 34>, <&kp UP>, <&macro_wait_time 4876>,
                 <&macro_tap_time 48>, <&kp DOWN>, <&macro_wait_time 3431>,
                 <&macro_tap_time 27>, <&kp DOWN>, <&macro_wait_time 5109>;
+        };
+
+        /* 30 min session - 9 randomized cycles, ~31 min total */
+        Scrl_30: Scrl_30 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&Scrl_Drift>, <&Scrl_Read>,  <&Scrl_Lazy>, <&Scrl_Rush>,
+                <&Scrl_Read>,  <&Scrl_Lazy>,  <&Scrl_Drift>, <&Scrl_Rush>,
+                <&Scrl_Rush>,  <&Scrl_Drift>, <&Scrl_Read>,  <&Scrl_Lazy>,
+                <&Scrl_Lazy>,  <&Scrl_Read>,  <&Scrl_Rush>,  <&Scrl_Drift>,
+                <&Scrl_Drift>, <&Scrl_Rush>,  <&Scrl_Lazy>,  <&Scrl_Read>,
+                <&Scrl_Read>,  <&Scrl_Drift>, <&Scrl_Rush>,  <&Scrl_Lazy>,
+                <&Scrl_Rush>,  <&Scrl_Lazy>,  <&Scrl_Drift>, <&Scrl_Read>,
+                <&Scrl_Lazy>,  <&Scrl_Drift>, <&Scrl_Read>,  <&Scrl_Rush>,
+                <&Scrl_Read>,  <&Scrl_Rush>,  <&Scrl_Drift>, <&Scrl_Lazy>;
         };
     };
 
