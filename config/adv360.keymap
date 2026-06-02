@@ -437,7 +437,17 @@
         Scrl_30: Scrl_30 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&Scrl_Drift &Scrl_Read &Scrl_Lazy &Scrl_Rush &Scrl_Read &Scrl_Lazy &Scrl_Drift &Scrl_Rush &Scrl_Rush &Scrl_Drift &Scrl_Read &Scrl_Lazy &Scrl_Lazy &Scrl_Read &Scrl_Rush &Scrl_Drift &Scrl_Drift &Scrl_Rush &Scrl_Lazy &Scrl_Read &Scrl_Read &Scrl_Drift &Scrl_Rush &Scrl_Lazy &Scrl_Rush &Scrl_Lazy &Scrl_Drift &Scrl_Read &Scrl_Lazy &Scrl_Drift &Scrl_Read &Scrl_Rush &Scrl_Read &Scrl_Rush &Scrl_Drift &Scrl_Lazy>;
+            bindings =
+                <&Scrl_Drift>, <&Scrl_Read>,  <&Scrl_Lazy>, <&Scrl_Rush>,
+                <&Scrl_Read>,  <&Scrl_Lazy>,  <&Scrl_Drift>, <&Scrl_Rush>,
+                <&Scrl_Rush>,  <&Scrl_Drift>, <&Scrl_Read>,  <&Scrl_Lazy>,
+                <&Scrl_Lazy>,  <&Scrl_Read>,  <&Scrl_Rush>,  <&Scrl_Drift>,
+                <&Scrl_Drift>, <&Scrl_Rush>,  <&Scrl_Lazy>,  <&Scrl_Read>,
+                <&Scrl_Read>,  <&Scrl_Drift>, <&Scrl_Rush>,  <&Scrl_Lazy>,
+                <&Scrl_Rush>,  <&Scrl_Lazy>,  <&Scrl_Drift>, <&Scrl_Read>,
+                <&Scrl_Lazy>,  <&Scrl_Drift>, <&Scrl_Read>,  <&Scrl_Rush>,
+                <&Scrl_Read>,  <&Scrl_Rush>,  <&Scrl_Drift>, <&Scrl_Lazy>,
+                <&Scrl_30>;
         };
     };
 
